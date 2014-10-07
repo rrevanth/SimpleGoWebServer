@@ -1,0 +1,33 @@
+README FILE
+
+@Author : Revoori Sai Revanth
+
+
+This project is in GO Language.
+
+The Server file is in server.go and the Test file is in server_test.go
+
+Server.go has  three functions : main , viewHandler and getResponse
+
+
+Whole processing is done in getResponse, No thrid libraries are used in creating the server
+
+To Run the server :
+
+Go in to the server namespace and add it to GOPATH
+
+export GOPATH = "your namespace path"
+
+In the src folder :
+
+go run server.go
+
+This will run the server instant on localhost:8080
+
+
+user.json is loaded only once.Hence if user.json is modified server needs to be restarted or else
+
+you can remove the condition against the getrecords to load it for every request
+
+All Use cases have been considered and tested accordingly
+
